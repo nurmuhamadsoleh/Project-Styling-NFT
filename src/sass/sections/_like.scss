@@ -1,0 +1,119 @@
+.like {
+  margin: 3rem 0;
+  border-radius: 20px;
+  background-color: var(--green);
+  position: relative;
+  height: 29rem;
+  overflow: hidden;
+  z-index: 1;
+  .background {
+    z-index: -1;
+    .ellipse {
+      position: absolute;
+      height: 100%;
+      width: 28rem;
+      border-radius: 100%;
+      filter: blur(100px);
+    }
+    .pink {
+      bottom: -75%;
+      left: -15%;
+      background-color: var(--light-green);
+    }
+    .green {
+      top: -50%;
+      right: -15%;
+      background-color: var(--light-green);
+    }
+  }
+  .container {
+    min-height: auto;
+    width: 500px;
+    // background-color: aqua;
+    display: block;
+    float: left;
+    margin-left: 40px;
+    img{
+      width: auto;
+      display: block;
+      margin-top: -80px;
+      // margin-right: 40px;
+      // padding-right: 20px;
+      margin-left: -70px;
+    }
+    // z-index: 1;
+    // // display: grid;
+    // // grid-template-columns: 1fr 1fr;
+    // // gap: 4rem;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // padding-top: 1.5rem;
+    // padding-left: 1rem;
+    // background-color: red;
+    // // height: auto;
+    // // width: auto;
+    // gap: 4rem;
+    // .content {
+    //   height: 200px;
+    //   z-index: 1;
+    //   width: 400px;
+    //   background-color: aqua;
+    //   display: flex;
+    //   // margin-left: 30px;
+    //   // margin-right: 150px;
+    //   // flex-direction: row;
+    //   justify-content: end;
+    // //   background-color: var(--accent-color2);
+    // //   display: flex;
+    // //   flex-direction: column;
+    // //   gap: 2rem;
+    // //   padding: 3rem;
+    // //   border-radius: 2rem;
+    // // }
+    // }
+    // .thumbnail{
+    //   height: 200px;
+    //   width: 465px;
+    //   background-color: yellow;
+    //   display: flex;
+    //   margin-left: auto;
+    //   // justify-content: end;
+    //   // justify-content:;
+    //   // flex-direction: row;
+    // }
+  }
+  .content{
+    min-height: auto;
+    width: 385px;
+    // background-color: aquamarine;
+    display: block;
+    float: right;
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-top: -40px;
+    // padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Barlow",sans-serif;
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .like {
+    margin: 0;
+    .container {
+      grid-template-columns: 1fr;
+      gap: 0;
+      .content {
+        padding: 1rem 2rem;
+        border-radius: 0;
+        &:nth-of-type(2) {
+          background-color: var(--background);
+        }
+      }
+    }
+  }
+}
