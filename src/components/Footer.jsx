@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../assets/logo.png";
+import brand from "../assets/brand.png";
 
 export default function Footer() {
 
@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="upper">
         <div className="brand-container">
           <div className="brand">
-            <img src={logo} alt="logo" />
+            <img src={brand} alt="logo" style={{width: '300px', marginLeft: '-40px'}} />
           </div>
           <p>Exclusive NFT Collection</p>
         </div>

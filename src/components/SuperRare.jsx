@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "./Card";
 
-import super1 from "../assets/super1.png";
-import super2 from "../assets/super2.png";
-import super3 from "../assets/super3.png";
-import super4 from "../assets/super4.png";
+import super1 from "../assets/img1.png";
+import super2 from "../assets/img2.png";
+import super3 from "../assets/img3.png";
+import super4 from "../assets/img4.png";
 
 export default function SuperRare() {
   const data = [
